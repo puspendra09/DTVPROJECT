@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="270dp"
+    android:background="@color/colorBlack"
+    android:layout_gravity="center"
+    android:layout_height="330dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select video quality"
+        android:background="@color/colorBlack"
+        android:textSize="20sp"
+        android:textColor="@color/colorText"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_quality">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Auto"
+            android:buttonTint="#C616E4"
+            android:id="@+id/quality_auto"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="360p"
+            android:buttonTint="#C616E4"
+            android:id="@+id/quality_360p"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="720p"
+            android:layout_marginBottom="15dp"
+            android:buttonTint="#C616E4"
+            android:id="@+id/quality_720p"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1080p"
+            android:buttonTint="#C616E4"
+            android:id="@+id/quality_1080p"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="right"
+        android:background="@color/colorBlack"
+        android:id="@+id/b_qality_dialog"
+        android:text="Cancel"/>
+
+
+
+</LinearLayout>
